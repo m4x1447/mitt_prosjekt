@@ -1,0 +1,381 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    top: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: white;
+}
+
+nav {
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    display: flex;
+    font-size: 1.7rem;
+    height: auto;
+    justify-content: space-between;
+    left: 0;
+    padding: 25px 40px 25px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    color: rgb(27, 27, 27);
+    box-sizing: border-box;
+}
+
+.logo {
+    cursor: pointer;
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    gap: 2rem;
+    display: flex;
+}
+
+nav ul a {
+    font-size: 1.1rem;
+    color: rgb(27, 27, 27);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .23s;
+}
+
+nav a:active {
+    color: rgb(84, 84, 84);
+}
+
+nav a:hover{
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: rgb(27, 27, 27);
+}
+
+.container {
+    margin: 0;
+
+    padding: 0 4rem;
+}
+
+.home {
+    background: aliceblue;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    height: 65rem;
+    justify-content: center;
+    position: relative;
+}
+
+.home-content {
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    position: relative;
+}
+
+.home-txt {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    position: relative;
+}
+
+.home-txt h1 {
+    font-size: 4rem;
+    color: rgb(27, 27, 27);
+    line-height: 1.2;
+    margin: 2rem 0 2rem 0;
+}
+
+.home-txt p {
+    color: rgba(27, 27, 27, 0.7);
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.1rem;    
+}
+
+.home-txt span {
+    margin: 2rem 0 2rem 0;
+    font-size: 2rem;
+}
+
+.home-txt span a {
+    color: rgb(27, 27, 27);
+}
+
+.home-txt span a:hover {
+    color: blue;
+}
+
+.skills {
+    font-size: 2rem !important;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.skills p {
+    font-size: 1.8rem !important;
+}
+
+.skills i {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.skills i:hover {
+    transform: translateY(-15px);
+}
+
+.home-img {
+    height: 40rem;
+    width: 40rem;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url(../images/captain-william-kidd-privateer-and-pirate-shanina-conway.jpg.png);
+}
+
+.aboutme { 
+    padding: 12rem;
+}
+
+.about-content {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.img-side {
+    margin-right: 8rem;
+}
+
+.img-side img{
+    height: 29rem;
+    width: 36rem;
+    border-radius: 12px;
+}
+
+.txt-side h1 {
+    color: blue;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.txt-side h2 {
+    color: rgb(27, 27, 27);
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.txt-side p {
+    color: rgba(27, 27, 27, 0.7);
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.projects {
+    background-color: aliceblue;
+    padding: 12rem 0;
+}
+
+.project-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content h1 {
+    color: blue;
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.subjects {
+    gap: 1.4rem;
+    display: flex;
+
+}
+
+@media (max-width: 800px) {
+    .subjects {
+        flex-direction: column;
+    }
+    .projects {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+
+.subjects a {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    transition: all .3s ease-in-out;
+}
+
+.subjects a:hover {
+    transform: translateY(-15px);
+}
+
+.subjects h3 {
+    max-width: 23rem;
+    margin-top: 5px;
+}
+
+.subjects p {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.subjects img {
+    display: flex;
+    width: 26rem;
+    height: 26rem;
+    border-radius: 12px;
+}
+
+.rotate-img {
+    rotate: 270deg;
+}
+
+/* Nedtelling til sommerferien */
+
+.countdown {
+    background: linear-gradient(#F0F8FF, #FFFFFF);
+    padding: 22rem 0 22rem 0;
+    text-align: center;
+}
+
+.countdown-content h1 {
+    font-size: 2.3rem;
+    margin-bottom: 80px;
+    color: blue;
+}
+
+.countdown-content span{
+    font-weight: 400;
+    margin-right: 3.2rem;
+    font-size: 2rem;
+    color:  rgb(27, 27, 27);
+}
+
+.contact {
+
+    padding: 8rem 0;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content h1 {
+    color: blue;
+    margin-bottom: 1rem;
+}
+
+.contact-content p {
+    color: rgba(27, 27, 27, 0.7);
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.1rem;
+}
+
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    gap: 8rem;
+}
+
+.contact-icons-box {
+    gap: 1.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.contact-icons-box span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: blue;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.contact-info a {
+    color: rgba(27, 27, 27, 0.7)
+}
+
+.contact-info a:hover {
+    color: blue;
+}
+
+footer {
+    background-color:rgb(84, 84, 84);
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.footer-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container h3 {
+    cursor: pointer;
+    color: white;   
+}
+
+.footer-socials a {
+    font-size: 1.3rem;
+    margin: 0.2rem;
+    color: white;
+}
+
+.footer-socials a:hover {
+    color: blue;
+}
+

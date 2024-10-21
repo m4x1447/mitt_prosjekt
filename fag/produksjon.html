@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <link rel="icon" type="images/x-icon" href="../images/favicon/favicon.ico">
+    <title>Min Portefølje</title>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="../index.html#home">Min Portefølje</a>
+        <ul>
+            <li><a href="../index.html#home">Hjem</a></li>
+            <li><a href="../index.html#aboutme">Om Meg</a></li>
+            <li><a href="../index.html#projects">Prosjekter</a></li>
+            <li><a href="../index.html#countdown">Dager til sommer</a></li>
+            <li><a href="../index.html#contact">Kontakt</a></li>
+            <li></li>
+        </ul>
+    </nav>
+
+    <div style="height: 10vh;"></div>
+    <span style="padding-left: 3rem;"><a href="../index.html#home">Min Portefølje</a><i
+            class="fa-solid fa-chevron-right"></i><a href="../index.html#projects">Prosjekter</a><i
+            class="fa-solid fa-chevron-right"></i>Produksjon og historiefortelling</span>
+    <div style="height: 10vh;"></div>
+
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="../images/BOK1.png" alt="Skrekkbok" style="width:100%">
+            <div class="text">skrekk bok, LUOIS LITT</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="../images/vesitkort.png" alt="vesitkort" style="width:100%">
+            <div class="text" style="margin-top: 20px;">Vesitkort</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="../images/InDesign_24aWCB4MVH.png" alt="Grafisk-profil" style="width:100%">
+            <div class="text">Grafisk profil av vesitkort</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="../images/Espresso-Elegance.png" alt="Espresso-Elegance" style="width:100%">
+            <div class="text">Espresso Elegance</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div style="height: 20vh;"></div>
+
+    <script src="../js/slideshow.js"></script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <h3>Maimillian Opsanger</h3>
+                <div class="footer-socials">
+                    <a href="https://github.com/m4x1447" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
